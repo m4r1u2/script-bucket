@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-curl -LO https://wordpress.org/latest.tar.gz -o /tmp/latest.tar.gz
+curl -Ls https://wordpress.org/latest.tar.gz -o /tmp/latest.tar.gz
 tar -xzf /tmp/latest.tar.gz -C /tmp/
 mv /tmp/wordpress/* /var/www/html
 rm -rf wordpress
