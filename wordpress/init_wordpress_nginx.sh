@@ -1,5 +1,6 @@
 #!/bin/bash -e
 
+echo "Staring (init of wordpress)..."
 curl -Ls https://wordpress.org/latest.tar.gz -o /tmp/latest.tar.gz
 tar -xzf /tmp/latest.tar.gz -C /tmp/
 mv /tmp/wordpress/* /var/www/html
@@ -62,3 +63,6 @@ server {
 }
 
 EOF
+
+echo "Done (init of wordpress)..."
+
